@@ -7,10 +7,9 @@ function diagonalDifference(arr) {
 
     for(let i=1; i < squareN; i++){
         firstDiag += arr[i][i];
-        secondDiag += arr[i][squareN-(i+1)]
+        secondDiag += arr[i][squareN-2]
         console.log(`This is what is going into first Diagonal ${arr[i][i]}. And in Second Diagonal ${arr[i][squareN-(i+1)]}`) 
     }
-    console.log(`The sum of first: ${firstDiag} - sum of second ${secondDiag}`)
     return (Math.abs(firstDiag-secondDiag))
     
 }
